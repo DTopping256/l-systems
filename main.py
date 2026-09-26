@@ -2,8 +2,6 @@
 
 import turtle
 import tkinter as tk
-
-# import time
 import math
 
 # A user editable dictionary of rules for an L-System.
@@ -75,8 +73,8 @@ symbols = {
     "c": "cc",
     "[": "sp",
     "]": "lp",
-    ##	         Increment the line width by line width increment
-    #!	         Decrement the line width by line width increment
+    # #	         Increment the line width by line width increment
+    # !	         Decrement the line width by line width increment
     # @	         Draw a dot with line width radius
     # {	         Open a polygon
     # }	         Close a polygon and fill it with fill colour
@@ -240,7 +238,6 @@ def drawLoop(window, t, text, label):
 
 
 def main():
-    # Use the same tk window instance on the
     window = tk.Tk()
     window.title("DansPi Draw Screen")
     text = tk.Text(window, width=25, height=40)
