@@ -1,8 +1,8 @@
 #! /usr/bin/python3
 
-import turtle
-import tkinter as tk
 import math
+import tkinter as tk
+import turtle
 
 # A user editable dictionary of rules for an L-System.
 rules = {"g": "+f+f+f+f+fg", "+": "-", "-": "+"}
@@ -201,7 +201,7 @@ def simplify(pattern, i=0):
                 prefixStartIndex = s.suffixSubStrStartIndex - 1
                 break
 
-        if multiplier is 0:
+        if multiplier == 0:
             output += pattern[prefixStartIndex]
 
         prefixStartIndex += 1
