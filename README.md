@@ -1,14 +1,15 @@
 # L-Systems
 
-A turtle graphics visualization of L-Systems (Lindenmayer systems).
+A toy example of procedurally generated 2D graphics using an L-System ([Lindenmayer system](https://en.wikipedia.org/wiki/L-system)) text input.
 
 ## Installation
 
-1. Install `uv` package manager if you don't have it
+1. Install `uv` package manager
 2. Create a virtual environment:
+
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   uv venv
+   source .venv/bin/activate
    ```
 
 ## Usage
@@ -17,4 +18,4 @@ A turtle graphics visualization of L-Systems (Lindenmayer systems).
 python main.py
 ```
 
-This will open a visualization window displaying L-System iterations with dynamic scaling and color cycling.
+This will open a visualization window displaying iteratively drawn graphics following the L-System instructions.
